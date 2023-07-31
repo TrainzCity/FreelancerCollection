@@ -1,9 +1,26 @@
-# Multilanguage README Pattern
+# Freelancer Collection
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/TrainzCity/FreelancerCollection/blob/main/README.en.md)
 
+## О проекте
+[Freelancer](https://en.wikipedia.org/wiki/Freelancer_(video_game)) - очень интересная и красивая игра в жанре аркада про космические приключения Эдисона Трента, выпущенная в 2003 году. Старт продаж был успешным, за годы популярность игра обросла большим сообщество. Однако в 2010 году Microsoft Corporation прекратила поддержку официальных серверов, а за годы работы не было выпущено ни одного патча или DLC. 
+Игроки сделали достаточно много модов и плагинов, часть из которых поддерживается до сих пор, но установка некоторых из них слишком сложна и может закончится ошибками. Мною было принято решение сделать лаунчер "Freelancer Collection", который объединит все моды и языковые пакеты, делая установку более удобной.
 
+## Почему Open Source
+За годы популярность игры Freelancer вокруг неё собралось огромное сообщество. Было написано огромное колличество модов, плагинов и языковых пакетов к ним, созданы сотни серверов сообщества. Контента к игре очень много и поддержка проекта в одиночку не представляется возможной. Каждый из вас может взять мои наработки и использовать их в своих продуктах. Вы можете закрыть исходный код и продавать решения за деньги, но оригинал проекта всегда будет распространяться бесплатно и свободно.
 
-Just another way to enable more than one language in our README.md files.
+## Системные требования
+Поддердиваемые операционные системы: Windows XP - Windows 10. Если вы используете Windows XP, вам необходимо установить .NETFramework 4.0.3 на вашу систему. Игра Freelancer отлично работает в Wine, [Valve Steam Proton](https://github.com/ValveSoftware/Proton) и [CrossOver](https://www.codeweavers.com/crossover/) (MacOS). Вы также можете играть во Freelancer на [SteamDeck](https://www.steamdeck.com/en/).
 
----
-[![how-to](https://img.shields.io/badge/how--to-use-blue.svg)](https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/STEPS.md)
+## Используемые библиотеки и технологии
+Приложение написано на языке программирования С# с использованием XAML-среды развёртки WPF. Проект построен на NET Framework 4.0.3 при помощи Visual Studio.
+
+## Полезные ссылки
+https://swat-portal.com/forum/ - Разработчики мода Freelancewr Crossfire
+
+https://discoverygc.com/ - Разработчики Freelancer Discovery
+
+https://vk.com/freelancercrossfire - Группа VK, где проект официально распространяется
+
+https://vk.com/flrebirth - Freelancer Rebirth mod
+
+https://www.elite-games.ru/ - Разработчики модов для игры Freelancer и не только
