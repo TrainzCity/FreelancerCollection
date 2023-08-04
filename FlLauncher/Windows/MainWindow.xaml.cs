@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FlLauncher
+namespace FlLauncher.Windows
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
