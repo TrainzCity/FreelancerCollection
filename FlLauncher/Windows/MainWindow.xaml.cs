@@ -19,9 +19,85 @@ namespace FlLauncher.Windows
     /// </summary>
     public partial class MainWindow : Window
     {
+        private List<Entity.ModPack> _modList;
         public MainWindow()
         {
             InitializeComponent();
+            _modList = new List<Entity.ModPack>()
+            {
+                new Entity.ModPack()
+                {
+                    Id = 0,
+                    Name = "Freelancer Crossfire 2.0 RUS",
+                    Description = "hihaha",
+                    Mod = new List<Entity.Mod>() {
+                        new Entity.Mod()
+                        {
+                            Id = 0,
+                            Name = "Руссификатор Дмитрия Царёва 1.9",
+                            Description = "Подходит для версии 1.9",
+                            Comment = "",
+                            InstallUri = "None"
+                        },
+                        new Entity.Mod()
+                        {
+                            Id = 1,
+                            Name = "Руссификатор Сергея Дмитриева 2.0",
+                            Description = "Подходит для версии 2.0",
+                            Comment = "Только миссии 14-43",
+                            InstallUri = "None"
+                        },
+                        new Entity.Mod()
+                        {
+                            Id = 2,
+                            Name = "Руссификатор Сергея Царёва 2.0",
+                            Description = "Подходит для версии 2.0",
+                            Comment = "Создан на базе руссификатора 1.9, непереведённый контент не отображается вовсе",
+                            InstallUri = "None"
+                        }
+                    }
+                },
+                new Entity.ModPack()
+                {
+                    Id = 1,
+                    Name = "Discovery Freelancer",
+                    Description = "hihaha",
+                    Mod = new List<Entity.Mod>() {
+                        new Entity.Mod()
+                        {
+                            Id = 0,
+                            Name = "Discovery Freelancer",
+                            Description = "Official Installer",
+                            Comment = "Manual Install",
+                            InstallUri = "None"
+                        },
+                        new Entity.Mod()
+                        {
+                            Id = 1,
+                            Name = "Discovery Freelancer RUS",
+                            Description = "Русскоязычный сервер, клиент на русском языке",
+                            Comment = "",
+                            InstallUri = "None"
+                        },
+                        new Entity.Mod()
+                        {
+                            Id = 2,
+                            Name = "Discovery Freelancer UKR",
+                            Description = "Украиноязычный сервер, клиент на руссом языке",
+                            Comment = "",
+                            InstallUri = "None"
+                        }
+                    }
+                }
+            };
+
+        }
+
+        private void GetMods_Click(object sender, RoutedEventArgs e)
+        {
+            Entity.Mod mod1 = _modList.FirstOrDefault(p => p.Name == "Freelancer Crossfire 2.0 RUS").Mod.FirstOrDefault(p => p.Name == "Руссификатор Сергея Дмитриева 2.0");
+            Entity.Mod mod2 = _modList.FirstOrDefault(p => p.Name == "Discovery Freelancer").Mod.FirstOrDefault(p => p.Name == "Discovery Freelancer");
+            MessageBox.Show(mod1.Name + "\n" + mod2.Name);
         }
     }
 }
