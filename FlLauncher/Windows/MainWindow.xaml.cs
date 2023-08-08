@@ -100,5 +100,15 @@ namespace FlLauncher.Windows
             Entity.Mod mod2 = _modList.FirstOrDefault(p => p.Name == "Discovery Freelancer").Mod.FirstOrDefault(p => p.Name == "Discovery Freelancer");
             MessageBox.Show(mod1.Name + "\n" + mod2.Name);
         }
+
+        private void Dg_Mods_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (Dg_Mods.SelectedItem is Entity.ModPack)
+            {
+                Dg_Mods.ItemsSource = (Dg_Mods.SelectedItem as Entity.ModPack).Mod;
+
+            }
+            Dg_Mods.UnselectAll();
+        }
     }
 }

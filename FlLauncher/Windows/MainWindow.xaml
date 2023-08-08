@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid x:Name="Dg_Mods" AutoGenerateColumns="False">
+        <DataGrid x:Name="Dg_Mods" AutoGenerateColumns="False" SelectionChanged="Dg_Mods_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Имя" Binding="{Binding Name}"></DataGridTextColumn>
             </DataGrid.Columns>
