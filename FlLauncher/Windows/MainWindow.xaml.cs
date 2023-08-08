@@ -90,6 +90,7 @@ namespace FlLauncher.Windows
                     }
                 }
             };
+            Dg_Mods.ItemsSource = _modList;
 
         }
 
