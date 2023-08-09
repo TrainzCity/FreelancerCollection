@@ -116,5 +116,14 @@ namespace FlLauncher.Windows
             Tbl_Mod.Text = "Доступные моды";
             Dg_Mods.ItemsSource = _modList;
         }
+
+        private void Dg_Mods_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left && Dg_Mods.CurrentCell.Item is Entity.Mod)
+            {
+                MessageBox.Show((Dg_Mods.CurrentCell.Item as Entity.Mod).Description);
+
+            }
+        }
     }
 }
