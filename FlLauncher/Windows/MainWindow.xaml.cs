@@ -105,10 +105,15 @@ namespace FlLauncher.Windows
         {
             if (Dg_Mods.SelectedItem is Entity.ModPack)
             {
+                Tbl_Mod.Text = (Dg_Mods.SelectedItem as Entity.ModPack).Name;
                 Dg_Mods.ItemsSource = (Dg_Mods.SelectedItem as Entity.ModPack).Mod;
-
             }
             Dg_Mods.UnselectAll();
+        }
+
+        private void Btn_Back_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
