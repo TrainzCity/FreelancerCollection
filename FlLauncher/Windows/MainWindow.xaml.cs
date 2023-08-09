@@ -113,7 +113,8 @@ namespace FlLauncher.Windows
 
         private void Btn_Back_Click(object sender, RoutedEventArgs e)
         {
-
+            Tbl_Mod.Text = "Доступные моды";
+            Dg_Mods.ItemsSource = _modList;
         }
     }
 }
