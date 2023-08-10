@@ -121,7 +121,8 @@ namespace FlLauncher.Windows
         {
             if (e.ChangedButton == MouseButton.Left && Dg_Mods.CurrentCell.Item is Entity.Mod)
             {
-                MessageBox.Show((Dg_Mods.CurrentCell.Item as Entity.Mod).Description);
+                InstallWindow installWindow = new InstallWindow((Dg_Mods.CurrentCell.Item as Entity.Mod));
+                installWindow.Show();
 
             }
         }
