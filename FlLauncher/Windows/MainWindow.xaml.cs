@@ -90,7 +90,7 @@ namespace FlLauncher.Windows
                     }
                 }
             };
-            Dg_Mods.ItemsSource = _modList;
+            IC_ModPacks.ItemsSource = _modList;
 
         }
 
@@ -101,27 +101,11 @@ namespace FlLauncher.Windows
             MessageBox.Show(mod1.Name + "\n" + mod2.Name);
         }
 
-        private void Dg_Mods_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (Dg_Mods.SelectedItem is Entity.ModPack)
-            {
-                Tbl_Mod.Text = (Dg_Mods.SelectedItem as Entity.ModPack).Name;
-                Dg_Mods.ItemsSource = (Dg_Mods.SelectedItem as Entity.ModPack).Mod;
-            }
-            Dg_Mods.UnselectAll();
-        }
-
-        private void Btn_Back_Click(object sender, RoutedEventArgs e)
-        {
-            Tbl_Mod.Text = "Доступные моды";
-            Dg_Mods.ItemsSource = _modList;
-        }
-
         private void Dg_Mods_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            if (e.ChangedButton == MouseButton.Left && Dg_Mods.CurrentCell.Item is Entity.Mod)
+            if (e.ChangedButton == MouseButton.Left && (sender as DataGrid).SelectedItem is Entity.Mod)
             {
-                InstallWindow installWindow = new InstallWindow((Dg_Mods.CurrentCell.Item as Entity.Mod));
+                InstallWindow installWindow = new InstallWindow((sender as DataGrid).SelectedItem as Entity.Mod);
                 installWindow.Show();
 
             }
