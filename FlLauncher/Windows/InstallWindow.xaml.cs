@@ -33,7 +33,18 @@ namespace FlLauncher.Windows
 
         private void Btn_Next_Click(object sender, RoutedEventArgs e)
         {
+            Btn_Back.Visibility = Visibility.Visible;
+            Btn_Next.IsEnabled = false;
+            Tbl_Header.Text = "Лицензионное соглашение:";
+            Tbl_Description.Text = _selectedMod.Comment;
+        }
 
+        private void Btn_Back_Click(object sender, RoutedEventArgs e)
+        {
+            Btn_Back.Visibility=Visibility.Hidden;
+            Btn_Next.IsEnabled = true;
+            Tbl_Header.Text = "Описание мода:";
+            Tbl_Description.Text = _selectedMod.Description;
         }
     }
 }

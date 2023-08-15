@@ -20,5 +20,6 @@
         <TextBlock x:Name="Tbl_Description" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap"></TextBlock>
         <TextBlock x:Name="Tbl_Header" Grid.ColumnSpan="3" HorizontalAlignment="Center" Text="Описание мода:" FontSize="24" FontWeight="Bold"></TextBlock>
         <Button x:Name="Btn_Next" Grid.Row="2" Grid.Column="2" Content="Далее" FontSize="24" HorizontalAlignment="Right" Margin="5" Click="Btn_Next_Click"></Button>
+        <Button x:Name="Btn_Back" Grid.Row="2" Grid.Column="0" Content="Назад" FontSize="24" HorizontalAlignment="Left" Visibility="Hidden" Margin="5" Click="Btn_Back_Click"></Button>
     </Grid>
 </Window>
