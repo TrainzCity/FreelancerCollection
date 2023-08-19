@@ -28,6 +28,94 @@ namespace FlLauncher.Windows
                 new Entity.ModPack()
                 {
                     Id = 0,
+                    Name = "Freelancer",
+                    Description = "hihaha",
+                    Mod = new List<Entity.Mod>() {
+                        new Entity.Mod()
+                        {
+                            Id = 0,
+                            Name = "Freelancer Original ISO",
+                            Description = "Disk version of Freelancer",
+                            Comment = "Manual Install",
+                            InstallUri = "None"
+                        },
+                        new Entity.Mod()
+                        {
+                            Id = 1,
+                            Name = "Freelancer 1.0",
+                            Description = "Original Freelancer Version (eng)",
+                            Comment = "Silent Install",
+                            InstallUri = "None"
+                        },
+                        new Entity.Mod()
+                        {
+                            Id = 2,
+                            Name = "Freelancer 1.1",
+                            Description = "Original Freelancer with Official path to version 1.1",
+                            Comment = "Silent Install",
+                            InstallUri = "None"
+                        },
+                        new Entity.Mod()
+                        {
+                            Id = 3,
+                            Name = "Freelancer 1.4",
+                            Description = "Original Freelancer with Unofficial path to version 1.4 by Buck Danny",
+                            Comment = "Silent Install",
+                            InstallUri = "None"
+                        }
+                    }
+                },
+                new Entity.ModPack()
+                {
+                    Id = 1,
+                    Name = "Freelancer RUS",
+                    Description = "hihaha",
+                    Mod = new List<Entity.Mod>() {
+                        new Entity.Mod()
+                        {
+                            Id = 0,
+                            Name = "Freelancer Disk Version",
+                            Description = "Официальная версия с лицензионного диска",
+                            Comment = "Ручная установка",
+                            InstallUri = "None"
+                        },
+                        new Entity.Mod()
+                        {
+                            Id = 1,
+                            Name = "Freelancer Repack by R.G. Mechanics",
+                            Description = "Репак от R.G. Механики",
+                            Comment = "Ручная установка",
+                            InstallUri = "None"
+                        },
+                        new Entity.Mod()
+                        {
+                            Id = 2,
+                            Name = "Freelancer RUS от Нового Диска",
+                            Description = "Русская версия от издательства \"Новый диск\"",
+                            Comment = "Тихая установка",
+                            InstallUri = "None"
+                        },
+                        new Entity.Mod()
+                        {
+                            Id = 3,
+                            Name = "Freelancer RUS от Elite Games",
+                            Description = "Русская версия от EliteGames",
+                            Comment = "Тихая установка",
+                            InstallUri = "None"
+                        },
+                        new Entity.Mod()
+                        {
+                            Id = 4,
+                            Name = "Freelancer RUS от Дядюшки Рисёча",
+                            Description = "Русский интерфейс от Дядюшки Рисёча",
+                            Comment = "Тихая установка",
+                            InstallUri = "None"
+                        }
+                    }
+                },
+                new Entity.ModPack()
+                {
+                    Id = 0,
                     Name = "Freelancer Crossfire 2.0 RUS",
                     Description = "hihaha",
                     Mod = new List<Entity.Mod>() {
