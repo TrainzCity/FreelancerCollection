@@ -33,16 +33,29 @@ namespace FlLauncher.Windows
 
         private void Btn_Next_Click(object sender, RoutedEventArgs e)
         {
-            Btn_Back.Visibility = Visibility.Visible;
-            Btn_Next.IsEnabled = false;
-            Tbl_Header.Text = "Лицензионное соглашение:";
-            Tbl_Description.Text = _selectedMod.Comment;
+            if (Tbl_Header.Text == "Лицензионное соглашение:")
+            {
+                if (_selectedMod.Comment.Contains("Тихая установка"))
+                {
+                    MessageBox.Show("Не найден установочный файл", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Указанный URL не доступен", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else
+            {
+                Btn_Back.Visibility = Visibility.Visible;
+                Tbl_Header.Text = "Лицензионное соглашение:";
+                Tbl_Description.Text = _selectedMod.Comment;
+            }
+
         }
 
         private void Btn_Back_Click(object sender, RoutedEventArgs e)
         {
-            Btn_Back.Visibility=Visibility.Hidden;
-            Btn_Next.IsEnabled = true;
+            Btn_Back.Visibility = Visibility.Hidden;
             Tbl_Header.Text = "Описание мода:";
             Tbl_Description.Text = _selectedMod.Description;
         }
