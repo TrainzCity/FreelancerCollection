@@ -115,7 +115,63 @@ namespace FlLauncher.Windows
                 },
                 new Entity.ModPack()
                 {
-                    Id = 0,
+                    Id = 2,
+                    Name = "Freelancer Crossfire 2.0",
+                    Description = "hihaha",
+                    Mod = new List<Entity.Mod>() {
+                        new Entity.Mod()
+                        {
+                            Id = 0,
+                            Name = "Freelancer Crossfire",
+                            Description = "Official Installer",
+                            Comment = "",
+                            InstallUri = "None"
+                        },
+                        new Entity.Mod()
+                        {
+                            Id = 1,
+                            Name = "Freelancer Crossfire 2.0",
+                            Description = "Official Crossfire 2.0 with Silent Install",
+                            Comment = "Тихая установка",
+                            InstallUri = "None"
+                        },
+                        new Entity.Mod()
+                        {
+                            Id = 2,
+                            Name = "Freelancer Crossfire 2.0.1",
+                            Description = "Latest Official version of Freelancer Crossfire 2.0 with Silent Install",
+                            Comment = "Тихая установка",
+                            InstallUri = "None"
+                        }
+                    }
+                },
+                 new Entity.ModPack()
+                {
+                    Id = 3,
+                    Name = "Discovery Freelancer",
+                    Description = "hihaha",
+                    Mod = new List<Entity.Mod>() {
+                        new Entity.Mod()
+                        {
+                            Id = 0,
+                            Name = "Discovery Freelancer Launcher",
+                            Description = "Official Version",
+                            Comment = "No FLMM need",
+                            InstallUri = "None"
+                        },
+                        new Entity.Mod()
+                        {
+                            Id = 1,
+                            Name = "Discovery Freelancer Latest",
+                            Description = "Official version with Silent Install and update inscluded",
+                            Comment = "Тихая установка",
+                            InstallUri = "None"
+                        }
+                    }
+                },
+                new Entity.ModPack()
+                {
+                    Id = 4,
                     Name = "Freelancer Crossfire 2.0 RUS",
                     Description = "hihaha",
                     Mod = new List<Entity.Mod>() {
@@ -147,8 +203,8 @@ namespace FlLauncher.Windows
                 },
                 new Entity.ModPack()
                 {
-                    Id = 1,
-                    Name = "Discovery Freelancer",
+                    Id = 5,
+                    Name = "Discovery Freelancer International",
                     Description = "hihaha",
                     Mod = new List<Entity.Mod>() {
                         new Entity.Mod()
