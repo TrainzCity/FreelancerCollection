@@ -232,6 +232,38 @@ namespace FlLauncher.Windows
                             InstallUri = "None"
                         }
                     }
+                },
+                new Entity.ModPack()
+                {
+                    Id = 8,
+                    Name = "Другая реальность",
+                    Description = "hihaha",
+                    Mod = new List<Entity.Mod>() {
+                        new Entity.Mod()
+                        {
+                            Id = 0,
+                            Name = "Другая реальность",
+                            Description = "Мод \"Другая реальность\" для игры Freelancer от EliteGames",
+                            Comment = "Тихая установка",
+                            InstallUri = "None"
+                        }
+                    }
+                },
+                new Entity.ModPack()
+                {
+                    Id = 9,
+                    Name = "Проклятие донгабаш",
+                    Description = "hihaha",
+                    Mod = new List<Entity.Mod>() {
+                        new Entity.Mod()
+                        {
+                            Id = 0,
+                            Name = "Проклятие донгабаш",
+                            Description = "Мод \"Проклятие донгабаш\" для игры Freelancer от EliteGames",
+                            Comment = "Тихая установка",
+                            InstallUri = "None"
+                        }
+                    }
                 }
             };
             IC_ModPacks.ItemsSource = _modList;
