@@ -264,6 +264,22 @@ namespace FlLauncher.Windows
                             InstallUri = "None"
                         }
                     }
+                },
+                new Entity.ModPack()
+                {
+                    Id = 10,
+                    Name = "EliteGames Main HQ",
+                    Description = "hihaha",
+                    Mod = new List<Entity.Mod>() {
+                        new Entity.Mod()
+                        {
+                            Id = 0,
+                            Name = "Freelancer 1.6 Multiplayer by Elite Games",
+                            Description = "Клиент Freelancer для PVP сервера от Elite Games с неофициальным патчем до версии 1.6",
+                            Comment = "Тихая установка",
+                            InstallUri = "None"
+                        }
+                    }
                 }
             };
             IC_ModPacks.ItemsSource = _modList;
