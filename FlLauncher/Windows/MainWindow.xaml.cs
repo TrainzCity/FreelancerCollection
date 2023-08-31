@@ -280,6 +280,22 @@ namespace FlLauncher.Windows
                             InstallUri = "None"
                         }
                     }
+                },
+                new Entity.ModPack()
+                {
+                    Id = 11,
+                    Name = "Nomad Legacy",
+                    Description = "hihaha",
+                    Mod = new List<Entity.Mod>() {
+                        new Entity.Mod()
+                        {
+                            Id = 0,
+                            Name = "Freelancer: Наследие Номадов",
+                            Description = "Данная версия содержит последнюю стабильную версию с полностью готовыми и озвученными 6 миссиями, а также 2 дополнительными заданиями, которые вы можете запустить через меню загрузок.",
+                            Comment = "Тихая установка",
+                            InstallUri = "None"
+                        }
+                    }
                 }
             };
             IC_ModPacks.ItemsSource = _modList;
