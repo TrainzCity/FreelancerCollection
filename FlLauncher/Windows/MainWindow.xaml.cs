@@ -235,6 +235,54 @@ namespace FlLauncher.Windows
                 },
                 new Entity.ModPack()
                 {
+                    Id = 6,
+                    Name = "Freelancer Orion Mod",
+                    Description = "hihaha",
+                    Mod = new List<Entity.Mod>() {
+                        new Entity.Mod()
+                        {
+                            Id = 0,
+                            Name = "Freelancer Orion Launcher",
+                            Description = "Official Version",
+                            Comment = "Manual Install",
+                            InstallUri = "None"
+                        },
+                        new Entity.Mod()
+                        {
+                            Id = 1,
+                            Name = "Freelancer Orion Mod",
+                            Description = "Последняя официальная версия Freelancer Orion Mod с новым установщиком",
+                            Comment = "Тихая установка",
+                            InstallUri = "None"
+                        }
+                    }
+                },
+                new Entity.ModPack()
+                {
+                    Id = 7,
+                    Name = "Freelancer Rebirth",
+                    Description = "hihaha",
+                    Mod = new List<Entity.Mod>() {
+                        new Entity.Mod()
+                        {
+                            Id = 0,
+                            Name = "Freelancer Rebirth 7.6",
+                            Description = "Official Version",
+                            Comment = "Manual Install",
+                            InstallUri = "None"
+                        },
+                        new Entity.Mod()
+                        {
+                            Id = 1,
+                            Name = "Freelancer Rebirth Latest",
+                            Description = "Последняя официальная версия Freelancer Rebirth с новым установщиком",
+                            Comment = "Тихая установка",
+                            InstallUri = "None"
+                        }
+                    }
+                },
+                new Entity.ModPack()
+                {
                     Id = 8,
                     Name = "Другая реальность",
                     Description = "hihaha",
