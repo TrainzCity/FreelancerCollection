@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using FlLauncher.Entity;
 
 namespace FlLauncher.Windows
@@ -19,6 +20,7 @@ namespace FlLauncher.Windows
     /// </summary>
     public partial class InstallWindow : Window
     {
+        private DispatcherTimer _loadTImer;
         private Mod _selectedMod;
         public InstallWindow()
         {
@@ -29,6 +31,15 @@ namespace FlLauncher.Windows
             InitializeComponent();
             _selectedMod = currentMod;
             Tbl_Description.Text = currentMod.Description;
+            _loadTImer = new DispatcherTimer();
+            _loadTImer.Interval = TimeSpan.FromSeconds(180);
+            _loadTImer.Tick += _loadTImer_Tick;
+        }
+
+        private void _loadTImer_Tick(object sender, EventArgs e)
+        {
+            _loadTImer.Stop();
+            MessageBox.Show("Указанный URL не доступен", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void Btn_Next_Click(object sender, RoutedEventArgs e)
@@ -41,7 +52,7 @@ namespace FlLauncher.Windows
                 }
                 else
                 {
-                    MessageBox.Show("Указанный URL не доступен", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    _loadTImer.Start();
                 }
             }
             else
