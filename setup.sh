@@ -11,8 +11,8 @@ chown minecraft:nogroup /srv/minecraft
 
 cd /srv/minecraft
 wget https://download.getbukkit.org/spigot/spigot-1.20.1.jar
-su minecraft -c java -Xms2048M -Xmx4096M -jar spigot-1.20.1.jar nogui
+su minecraft -c "java -Xms2048M -Xmx4096M -jar spigot-1.20.1.jar nogui" -s /bin/bash
 sed '/eula/d' eula.txt
 echo eula=true > eula.txt
 
-su minecraft -c screen -S minecraft java -Xms2048M -Xmx4096M -jar spigot-1.20.1.jar nogui
+su minecraft -c "screen -S minecraft java -Xms2048M -Xmx4096M -jar spigot-1.20.1.jar nogui" -s /bin/bash
